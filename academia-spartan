@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spartan Gym — Treine com Força</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark">
+  <header class="topbar">
+    <div class="container">
+      <a class="logo" href="#">SPARTAN GYM</a>
+      <nav class="nav">
+        <a href="#planos">Planos</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#trainers">Personal</a>
+        <a href="#loja">Loja</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="cta-group">
+        <button class="btn btn-ghost" id="btn-login">Área do Cliente</button>
+        <button class="btn btn-primary" id="btn-agende">Agende Avaliação</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">FORÇA. FOCO. SPARTAN.</h1>
+          <p class="hero-sub">Acompanhamento personalizado com personal trainers, aulas de natação, pilates e fit-dance. Seu espaço de transformação.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary">Comece Agora</button>
+            <button class="btn btn-outline">Ver Planos</button>
+          </div>
+          <ul class="hero-features">
+            <li>Personal trainers — treinos exclusivos</li>
+            <li>Aulas: Natação • Pilates • Fit Dance</li>
+            <li>Ponto de venda de produtos de terceiros</li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <!-- placeholder image block -->
+          <div class="hero-image" aria-hidden="true">
+            <img src="placeholder-train.jpg" alt="Treinamento Spartan">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="section section-planos">
+      <div class="container">
+        <h2 class="section-title">Planos</h2>
+        <p class="section-desc">Escolha o plano que combina com seu objetivo.</p>
+        <div class="cards-grid">
+          <div class="card card-plan">
+            <div class="card-head">
+              <h3>Básico</h3>
+              <div class="price">R$ 100</div>
+            </div>
+            <ul class="card-list">
+              <li>Acesso à academia</li>
+              <li>Direito a personal</li>
+              <li>Treino individualizado</li>
+            </ul>
+            <button class="btn btn-primary">Assinar</button>
+          </div>
+
+          <div class="card card-plan featured">
+            <div class="badge">Mais Popular</div>
+            <div class="card-head">
+              <h3>Intermediário</h3>
+              <div class="price">R$ 175</div>
+            </div>
+            <ul class="card-list">
+              <li>Plano básico</li>
+              <li>+ 1 aula especial (pilates ou fit-dance)</li>
+              <li>Acompanhamento online</li>
+            </ul>
+            <button class="btn btn-primary">Assinar</button>
+          </div>
+
+          <div class="card card-plan">
+            <div class="card-head">
+              <h3>Premium</h3>
+              <div class="price">R$ 300</div>
+            </div>
+            <ul class="card-list">
+              <li>Acesso a todas as aulas</li>
+              <li>Nutricionista e dieta personalizada</li>
+              <li>Prioridade em agendamentos</li>
+            </ul>
+            <button class="btn btn-outline">Assinar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aulas Especiais -->
+    <section id="aulas" class="section section-aulas">
+      <div class="container">
+        <h2 class="section-title">Aulas Especiais</h2>
+        <div class="aulas-grid">
+          <article class="aula-card">
+            <img src="placeholder-pilates.jpg" alt="Pilates">
+            <div class="aula-body">
+              <h3>Pilates</h3>
+              <p class="aula-price">R$ 100 / aula</p>
+              <p>Melhora flexibilidade, consciência corporal e prevenção de lesões.</p>
+              <button class="btn btn-primary">Comprar Aula</button>
+            </div>
+          </article>
+
+          <article class="aula-card">
+            <img src="placeholder-fitdance.jpg" alt="Fit Dance">
+            <div class="aula-body">
+              <h3>Fit Dance</h3>
+              <p class="aula-price">R$ 100 / aula</p>
+              <p>Aula dinâmica para queima calórica e condicionamento.</p>
+              <button class="btn btn-primary">Comprar Aula</button>
+            </div>
+          </article>
+
+          <article class="aula-card">
+            <img src="placeholder-swim.jpg" alt="Natação">
+            <div class="aula-body">
+              <h3>Natação</h3>
+              <p class="aula-price">R$ 170 / aula</p>
+              <p>Aulas orientadas para técnica, resistência e reabilitação.</p>
+              <button class="btn btn-primary">Comprar Aula</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Trainers -->
+    <section id="trainers" class="section section-trainers">
+      <div class="container">
+        <h2 class="section-title">Personal Trainers</h2>
+        <p class="section-desc">Treinadores certificados e com especialidades.</p>
+        <div class="trainers-grid">
+          <div class="trainer-card">
+            <img src="placeholder-trainer1.jpg" alt="Trainer 1">
+            <h4>Lucas Silva</h4>
+            <p class="muted">Especialidade: Hipertrofia • Reabilitação</p>
+            <button class="btn btn-outline">Agendar</button>
+          </div>
+
+          <div class="trainer-card">
+            <img src="placeholder-trainer2.jpg" alt="Trainer 2">
+            <h4>Ana Torres</h4>
+            <p class="muted">Especialidade: Emagrecimento • Pilates</p>
+            <button class="btn btn-outline">Agendar</button>
+          </div>
+
+          <div class="trainer-card">
+            <img src="placeholder-trainer3.jpg" alt="Trainer 3">
+            <h4>Rafael Costa</h4>
+            <p class="muted">Especialidade: Natação • Condicionamento</p>
+            <button class="btn btn-outline">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loja -->
+    <section id="loja" class="section section-loja">
+      <div class="container">
+        <h2 class="section-title">Loja — Produtos de Terceiros</h2>
+        <p class="section-desc">Suplementos, acessórios e mais — vendidos no local.</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="placeholder-product1.jpg" alt="Produto">
+            <h4>Creatina 400g</h4>
+            <p class="price">R$ 89,90</p>
+            <button class="btn btn-primary">Ver no Ponto</button>
+          </div>
+          <div class="product-card">
+            <img src="placeholder-product2.jpg" alt="Produto">
+            <h4>Bandas Elásticas</h4>
+            <p class="price">R$ 39,90</p>
+            <button class="btn btn-primary">Ver no Ponto</button>
+          </div>
+          <div class="product-card">
+            <img src="placeholder-product3.jpg" alt="Produto">
+            <h4>Garrafa Térmica Spartan</h4>
+            <p class="price">R$ 59,90</p>
+            <button class="btn btn-primary">Ver no Ponto</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato / Localização -->
+    <section id="contato" class="section section-contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Localização & Contato</h2>
+          <p>Rua Fernandes Campelo Araújo - João Aranha – SP</p>
+          <p class="muted">Horário: Seg–Sex 6:00–22:00 • Sáb 8:00–14:00</p>
+          <p>Telefone: (11) 9XXXX-XXXX</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome">
+            <label>Telefone</label>
+            <input type="tel" placeholder="(11) 9XXXX-XXXX">
+            <label>Motivo</label>
+            <select>
+              <option>Avaliação</option>
+              <option>Planos</option>
+              <option>Aulas</option>
+            </select>
+            <button class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Spartan Gym</strong>
+        <p>Rua Fernandes Campelo Araújo - João Aranha – SP</p>
+      </div>
+      <div>
+        <p>© 2025 Spartan Gym. Todos os direitos reservados.</p>
+      </div>
+      <div>
+        <p>Desenvolvido por Spartan Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal scripts for modal / interactions (placeholder) -->
+  <script>
+    document.getElementById('btn-agende').addEventListener('click', function(){
+      alert('Abrir modal de agendamento (protótipo)');
+    });
+  </script>
+</body>
+</html>
+:root{
+  --bg: #0B0B0D;
+  --white: #FFFFFF;
+  --muted: #BDBDBD;
+  --accent: #7B3FF2;
+  --accent-dark: #4E1BD6;
+  --card: #0F0F11;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 12px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body.bg-dark{background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}
+
+.container{max-width:1150px;margin:0 auto;padding:2rem}
+
+/* Topbar */
+.topbar{position:sticky;top:0;background:linear-gradient(180deg, rgba(11,11,13,0.85), rgba(11,11,13,0.6));backdrop-filter:blur(4px);z-index:40}
+.topbar .container{display:flex;align-items:center;gap:1rem}
+.logo{font-family:'Montserrat',sans-serif;font-weight:900;color:var(--white);text-decoration:none;font-size:1.1rem;letter-spacing:1px}
+.nav{margin-left:2rem;flex:1;display:flex;gap:1rem}
+.nav a{color:var(--muted);text-decoration:none;padding:0.5rem 0.6rem;border-radius:8px}
+.nav a:hover{color:var(--white);background:var(--glass)}
+
+.cta-group{display:flex;gap:0.6rem}
+.btn{border:0;padding:0.7rem 1rem;border-radius:10px;font-weight:600;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:var(--white);box-shadow:0 6px 18px rgba(123,63,242,0.18)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.06)}
+.btn-ghost{background:transparent;color:var(--muted)}
+
+/* Hero */
+.hero{position:relative;padding:4rem 0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,11,13,0.6), rgba(11,11,13,0.85));pointer-events:none}
+.hero-content{display:flex;align-items:center;gap:2rem}
+.hero-left{flex:1;z-index:2}
+.hero-right{flex:0 0 420px}
+.hero-image img{width:100%;height:320px;object-fit:cover;border-radius:16px;filter:brightness(0.9)}
+.hero-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:3rem;letter-spacing:1px;margin-bottom:0.6rem;color:var(--white)}
+.hero-sub{color:var(--muted);margin-bottom:1rem}
+.hero-ctas{display:flex;gap:1rem;margin-bottom:1rem}
+.hero-features{list-style:none;margin-top:1rem;color:var(--muted)}
+.hero-features li{margin:0.4rem 0}
+
+/* Sections */
+.section{padding:3.2rem 0}
+.section-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.6rem;margin-bottom:0.4rem;color:var(--white)}
+.section-desc{color:var(--muted);margin-bottom:1rem}
+
+/* Cards grid */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1rem}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.2rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card-plan{display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.card-head{display:flex;justify-content:space-between;align-items:center;width:100%}
+.card-head h3{margin:0;color:var(--white)}
+.price{font-size:1.4rem;font-weight:800;color:var(--accent)}
+.card-list{color:var(--muted);list-style:none;padding-left:0}
+.card-list li{margin:0.4rem 0}
+.featured{border:1px solid rgba(123,63,242,0.22);box-shadow:0 10px 30px rgba(79,34,188,0.12)}
+
+/* Aulas */
+.aulas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.aula-card{background:var(--card);border-radius:12px;overflow:hidden}
+.aula-card img{width:100%;height:160px;object-fit:cover;display:block}
+.aula-body{padding:0.9rem}
+.aula-price{color:var(--accent);font-weight:700}
+
+/* Trainers */
+.trainers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.trainer-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:12px;text-align:center}
+.trainer-card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:0.6rem}
+.muted{color:var(--muted)}
+
+/* Loja */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product-card{background:var(--card);padding:1rem;border-radius:10px;text-align:center}
+.product-card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.price{color:var(--accent);font-weight:700}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.contact-form form{display:flex;flex-direction:column;gap:0.6rem}
+.contact-form input, .contact-form select{padding:0.7rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:2rem 0;margin-top:2rem;color:var(--muted)}
+.footer-grid{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .cards-grid,.aulas-grid,.trainers-grid,.products-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-content{flex-direction:column}
+  .hero-right{width:100%}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .nav{display:none}
+  .cards-grid,.aulas-grid,.trainers-grid,.products-grid{grid-template-columns:1fr}
+  .hero-title{font-size:2rem}
+  .cta-group{display:none}
+}
